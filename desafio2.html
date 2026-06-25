@@ -1,0 +1,116 @@
+<section>
+  <h2>Cadastro de Participantes de Oficina</h2>
+  <form action="#">
+    <label for="nome">Nome comleto:</label><br />
+    <input
+      type="text"
+      id="nome"
+      name="nome"
+      placeholder="Digite seu nome..."
+    /><br />
+    <br />
+
+    <label for="senha">Senha de acesso:</label><br />
+    <input
+      type="text"
+      id="senha"
+      name="senha"
+      placeholder="Digite sua senha..."
+    /><br />
+
+    <br />
+    <label for="oficinas">Oficina principal:</label>
+    <select name="oficinas" id="oficinas">
+      <br />
+      <option value="html e css">HTML E CSS</option>
+      <option value="javascript">JavaScript</option>
+      <option value="banco de dados">BANCO DE DADOS</option>
+      <option value="robotica">ROBÓTICA</option>
+    </select>
+    <br />
+
+    <p>Turno:</p>
+
+    <input type="radio" id="manha" name="manha" value="Manhã" />
+    <label for="manha">Manhã</label>
+    <input type="radio" id="tarde" name="tarde" value="Tarde" />
+    <label for="tarde">Tarde</label>
+    <input type="radio" id="noite" name="noite" value="Noite" />
+    <label for="noite">Noite</label>
+    <br />
+
+    <p>Áreas de interesse:</p>
+
+    <input
+      type="checkbox"
+      id="programacao web"
+      name="programacao web"
+      value="Programação Web"
+    />
+    <label for="programacao web">Programaçã Web</label>
+    <input type="checkbox" id="design" name="design" value="Design" />
+    <label for="design">Design</label>
+    <input
+      type="checkbox"
+      id="banco de dados"
+      name="banco de dados"
+      value="Banco de Dados"
+    />
+    <label for="banco de dados">Banco de Dados</label>
+    <input type="checkbox" id="robotica" name="robotica" value="Robótica" />
+    <label for="robotica">Robótica</label>
+    <br />
+
+    <br />
+    <label for="observacoes">Observações:</label><br />
+    <textarea name="observacoes" id="Observações" rows="5"></textarea>
+    <br />
+
+    <br />
+    <button type="submit" onclick="alert('ENVIADO!')">Enviar inscrição</button>
+  </form>
+</section>
+
+<section>
+  <h2>Pariticipantes já Inscritos:</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Oficina</th>
+        <th>Turno</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <th>Ana Clara</th>
+        <th>HTML e CSS</th>
+        <th>Manhã</th>
+        <th>Confirmado</th>
+      </tr>
+      <tr>
+        <td>Lucas Henrique</td>
+        <td>JavaScript</td>
+        <td>Tarde</td>
+        <td>Pendente</td>
+      </tr>
+      <tr>
+        <td>Mariana Souza</td>
+        <td>Banco de Dados</td>
+        <td>Noite</td>
+        <td>Confirmado</td>
+      </tr>
+      <tr>
+        <td>Pedro Lima</td>
+        <td>Robótica</td>
+        <td>Tarde</td>
+        <td>Em análise</td>
+      </tr>
+      <tr>
+        <td>Juliana Alves</td>
+        <td>HTML e CSS</td>
+        <td>Manhã</td>
+        <td>Confirmado</td>
+      </tr>
+    </thead>
+  </table>
+</section>
