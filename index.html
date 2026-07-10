@@ -1,360 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário de inscrição para Bolsista</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <style>
+
+      
+      body {
+        font-family:Arial, Helvetica, sans-serif;
+        /* font-family: 'Times New Roman', Times, serif; */
+        /* font-family: 'Courier New', Courier, monospace; */
+      }
+    </style> -->
+  </head>
+  <body
+
+  <h2 style="color: var(--bronze); background-color: var(--sunflower-gold);" class="negrito"><h2>Formulário de inscrição para Bolsista</h2>
+
+  <br>
+  <form action="#">
+        <label for="nome" class="negrito">Nome completo:</label><br />
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." /><br />
+
+        <label for="numero" class="negrito">Matricula:</label><br />
+        <input type="nunber" id="numero" name="numero" placeholder="Digite sua matricula..." /><br />
+
+        <label for="senha" class="negrito">Senha:</label><br />
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha..."/><br />
+
+        <label for="linguagens" class="negrito">Curso:</label><br />
+        <select name="linguagens" id="linguagens">
+          <option value="informática">Informática</option>
+          <option value="rec. pesqueiros">Rec. Pesqueiros</option>
+          <option value="quimica">Química</option>
+          <option value="nenhuma">Nenhuma</option>
+        </select>
+
+        <p class="courier">Turno:</p>
+
+        <input type="radio" id="sim" name="Manhã" value="Sim" />
+        <label for="sim">Manhã</label>
+        <input type="radio" id="nao" name="Tarde" value="Não" />
+        <label for="nao">Tarde</label>
+        <br />
+
+        <p class="courier">Áreas de interesse:</p>
+
+        <input type="checkbox" id="programacao_web" name="programacao_web" value="Programação_Web" />
+        <label for="programacao_web">Programação Web</label>
+        <input type="checkbox" id="design" name="design" value="Design" />
+        <label for="design">Design</label>
+        <input type="checkbox" id="banco_de_dados" name="banco_de_dados" value="Banco_de_dados" />
+        <label for="banco_de_dados">Banco de dados</label>
+        <input type="checkbox" id="robotica" name="robotica" value="Robótica" />
+        <label for="robotica">Robótica</label>
+        <br>
+
+        <br>
+        <label for="observacoes">Observações:</label><br />
+        <textarea name="observacoes" id="observacoes" rows="5"></textarea><br />
+        <br />
+
+        <br />
+        <button type="submit" onclick="alert('ME CLICOU!')">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+  <h2>Participantes já Inscritos:</h2>
+  <table border="1" id="tabela">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Curso</th>
+        <th>Turno</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ana Clara</td>
+        <td>Informática</td>
+        <td>Manhã</td>
+        <td>Confirmado</td>
+      </tr>
+      <tr>
+        <td>Lucas Henrique</td>
+        <td>Rec. Pesqueiros</td>
+        <td>Tarde</td>
+        <td>Pendente</td>
+      </tr>
+      <tr>
+        <td>Mariana Souza</td>
+        <td>Química</td>
+        <td>Manhã</td>
+        <td>Confirmado</td>
+      </tr>
+      <tr>
+        <td>Pedro Lima</td>
+        <td>Informática</td>
+        <td>Tarde</td>
+        <td>Em análise</td>
+      </tr>
+      <tr>
+        <td>Juliana Alves</td>
+        <td>Química</td>
+        <td>Manhã</td>
+        <td>Confirmado</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
-<!-- Contém o conteúdo visível da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoria Web</title>
+  </head>
+  <!-- contém o conteúdo visível da página  -->
+  <body>
+    <!-- header: define o cabeçalho. Exibe logo, título, nav...  -->
+    <h1>Jesus saves, bro</h1>
+    <h2>branquinho, sempre em nossos corações!</h2>
+    <!-- main: Delimita o conteúdo principal da página, único por documento, 
+      facilitando navegação por leitores de tela  -->
+    <main>
+      <!-- <section>: seção temática do documento, geralmente com um título próprio -->
+<section>
+  <h2>Seção 1</h2>
+  <!-- 
+          <div>: contêiner genérico em bloco, sem significado semântico próprio, 
+          útil para agrupamento quando nenhum dos elementos semânticos se aplica.
+        -->
+        <div>
+  <img
+      src="assets/imgs/neypsg.png"
+      alt="Neymar"/>
+  </div>
 
-<body>
-  <!-- Define o cabeçalho. Exibe logo, título, nav...-->
-  <header>
-    <h1>God's Plan</h1>
-    <h2>Os planos de Deus</h2>
-
-    <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Classificação</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        .classificacao {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .classificacao h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #000;
-        }
-
-        .tabela-classificacao {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .tabela-classificacao th,
-        .tabela-classificacao td {
-            padding: 14px 10px;
-            text-align: center;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .tabela-classificacao th {
-            font-weight: bold;
-            color: #000;
-            background-color: #fff;
-        }
-
-        .tabela-classificacao td:nth-child(2) {
-            text-align: left;
-            font-weight: bold;
-        }
-
-        .tabela-classificacao tbody tr:hover {
-            background-color: #f8f8f8;
-        }
-
-        .posicao {
-            font-weight: bold;
-            width: 50px;
-        }
-    </style>
-</head>
-<body>
-
-    <section class="classificacao">
-        <h2>Tabela de Classificação</h2>
-
-        <table class="tabela-classificacao">
-            <thead>
-                <tr>
-                    <th>Pos</th>
-                    <th>Seleção</th>
-                    <th>J</th>
-                    <th>V</th>
-                    <th>E</th>
-                    <th>D</th>
-                    <th>SG</th>
-                    <th>Pts</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="posicao">1</td>
-                    <td>Escócia</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>+1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td class="posicao">2</td>
-                    <td>Marrocos</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td class="posicao">3</td>
-                    <td>Brasil</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td class="posicao">4</td>
-                    <td>Haiti</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>-1</td>
-                    <td>0</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-</body>
-</html>
-
-    <section>
-      <h2>Núcleo Tecnológico</h2>
-      <table>
-        <thead>
-          <tr>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="4">Aulas semanais por período</th>
-            <th colspan="2">Carga Horária</th>
-          </tr>
-          <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>Hora/Relógio</th>
-            <th>Hora/Aula</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>Classificação Atual (Grupo C)</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Pos</th>
-            <th>Seleção</th>
-            <th>Pontos</th>
-            <th>Jogos</th>
-            <th>Saldo de Gols</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1°</td>
-            <td>Escócia</td>
-            <td>3</td>
-            <td>1</td>
-            <td>+1</td>
-          </tr>
-          <tr>
-            <td>2°</td>
-            <td>Marrocos</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>3°</td>
-            <td>Brasil</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>4°</td>
-            <td>Haiti</td>
-            <td>0</td>
-            <td>1</td>
-            <td>-1</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>Técnico em Informática - 1 ano</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Disciplinas</th>
-            <th>Carga Horária (h)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Autoria Web</td>
-            <td>60</td>
-          </tr>
-          <tr>
-            <td>Introdução a Programação</td>
-            <td>120</td>
-          </tr>
-          <tr>
-            <td>Educação em Tecnologias Digitais</td>
-            <td>60</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-   <section>
-    <h2>Envie uma mensagem</h2>
-    <form action="#">
-      <label for="nome">Nome completo:</label><br>
-      <input type="text" id="nome" name="nome" placeholder="Digite seu nome..."><br>
-
-      <label for="senha">Senha:</label><br>
-      <input type="password" name="senha" id="senha" placeholder="Digite sua senha..."><br>
-
-      <p>Brasil vai ser campeão?</p>
-
-      <input type="radio" id="sim" name="brasil" value="Sim">
-      <label for="sim">Sim</label>
-      <input type="radio" id="nao" name="brasil" value="Não">
-      <label for="nao">Não</label>
-      <br>
-
-      <p>Selecione as suas favoritas ao título 2026:</p>
-
-      <input type="checkbox" id="brasil" name="brasil" value="Brasil" />
-      <label for="brasil">Brasil</label>
-      <input type="checkbox" id="franca" name="franca" value="França" />
-      <label for="franca">França</label>
-      <input type="checkbox" id="argentina" name="argentina" value="Argentina" />
-      <label for="argentina">Argentina</label>
-      <input type="checkbox" id="portugal" name="portugal" value="Portugal" />
-      <label for="portugal">Portugal</label>
-      <br>
-
-      <br>
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea name="mensagem" id="mensagem" rows="5"></textarea>
-      <br>
-
-      <br>
-      <label for="linguagens">Linguagem web preferida:</label>
-      <select name="linguagens" id="linguagens"><br>
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="javascript">JavaScript</option>
-        <option value="nenhuma">NENHUMA</option>
-      </select>
-      <br>
-
-      <br>
-      <button type="submit" onclick="alert('ME CLICOU!')">Enviar</button>
-    </form>
-   </section>
-
-    <nav>
-      <ul>
+  <p>class="negrito maior fonte"</p>
+      <ul id="nav-sections">
         <li>
-          <a href="#">Início</a>
+          <a href="https://pt.wikipedia.org/wiki/Jesus">Jesus</a>
         </li>
         <li>
-          <a href="#">Sobre</a>
+          <a href="https://www.ebiografia.com/jesus_cristo/">Sobre</a>
         </li>
         <li>
-          <a href="https://github.com/benicios-afk/AutoriaWeb26">Github</a>
+          <a
+            href="https://www.youtube.com/watch?v=0174tYEZnnA&list=RD0174tYEZnnA&start_radio=1"
+            >Queima de Novo</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/UiltonFelipe/codespaces-blank">Github</a>
+          <li>
+          <a href="desafio1.html">Desafio 1</a>
+        </li>
+        </li>
+        <li>
+          <a href="desafio2.html">Desafio 2</a>
         </li>
       </ul>
-    </nav>
-  </header>
-
-  <br />
-
-  <!-- main: delimita o conteúdo principal da página -->
-
-  <main>
-    
-    <section>
-      <h2>Seção 1</h2>
-
-      <div>
-        <img src="assets/imgs/Jesus.png" alt="Imagem de uma cruz">
-      </div>
-
-<img src="assets/imgs/messi2.png"
-      alt="Foto de costas do Messi jogando pela Argentina comemeorando um gol apontando para o céu">
-
-    Lorem ipsum <strong>dolor</strong>, sit amet consectetur adipisicing elit. Fugit adipisci
-    vero possimus quas soluta veniam deleniti repellendus molestiae nostrum
-    labore laudantium rem, dolore dicta sequi. Autem a quas eius doloribus?
-
-    <br>
-
-     <article>
-      <p>Lorem, ipsum <em>dolor</em> sit amet consectetur adipisicing elit. Tempor
-      e, ipsam aspernatur, eligendi accusantium dignissimos dolore dolor id even
-      iet sunt commodi mollitia. Ipsam vel beatae perspiciatis non, consectetur
-      voluptatibus fugiat molestias
-      </p>
-     </article>
     </section>
+</nav>
+</main>
     
-    <br>
-
+   <main>
     <section>
-      <h3>Seção 2</h3>
-      <p>Dicas para alcançar seus objetivos>:</p>
-    <ul>
+      <h2>Seção 2</h2>
+      <img src="assets/imgs/Jesus.png" alt="Cruz">
+       
+      <!-- 
+          <article>: bloco de conteúdo independente e reutilizável 
+          (post de blog, notícia, card de produto, comentário), 
+          que faz sentido fora do contexto imediato. 
+        -->
+        <article>
+      <p>
+      Lorem ipsum <strong>dolor</strong> sit amet consectetur, adipisicing elit.
+      Doloremque saepe rem cum impedit! Id voluptatibus harum quisquam veritatis
+      hic dicta, laudantium debitis facilis? Praesentium, veritatis ad harum
+      delectus consectetur commodi.
+    </p>
+
+    <br />
+
+    <p>
+      Lorem ipsum <em>dolor</em> sit, amet consectetur adipisicing elit. Quidem
+      quis minima numquam blanditiis ab consectetur hic corrupti ad, tempore
+      illo eum quam culpa nesciunt magni sunt libero neque obcaecati iusto!
+    </p>
+    </section>
+  </main> 
+    <br />
+   <main>
+    <section>
+      <h2>Seção 3</h2>
+      <img src="assets/imgs/messi2.png" alt="Messi">
+      <p>Dicas para alcançar os seus objetivos:</p>
+       <ul>
       <li>Foco</li>
       <li>Força</li>
       <li>Fé</li>
     </ul>
-    </section>
-
-    <section>
-      <h4>Seção 3</h4>
-<p>O que fazer quando chegar no lab?</p>
+    <p>O que fazer no lab?</p>
     <ol>
-      <li>Ligar o pc</li>
-      <li>Iniciar a VM no github</li>
+      <li>Ligar o PC</li>
+      <li>Iniciar a VM no Github Codespaces</li>
       <li>Prestar atenção no professor</li>
     </ol>
+  </main>
     </section>
   </main>
+   
 
+  <!-- footer: rodapé da página ou de uma seção, com informações de autoria, 
+      direitos, links secundários, contatos, etc.  -->
   <footer>
-    <h3>IFRN-Campus Macau</h3>
-    <p>Desenvolvido por Benicio Ravi</p>
+<h3>IFRN - Campus Macau</h3>
+  <p>Desenvolvido por Benicio Ravi</p>
   </footer>
-
-  <body>
-
+  </body>
 </html>
